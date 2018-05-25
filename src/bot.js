@@ -34,7 +34,7 @@ let client =  new LineConnect();
 //let client =  new LineConnect(auth);
 
 client.startx().then(async (res) => {
-	while(true) {
+	while(False) {
 		try {
 			ops = await client.fetchOps(res.operation.revision);
 		} catch(error) {
